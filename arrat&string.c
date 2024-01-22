@@ -2,12 +2,11 @@
 int main()
 {
     // int z[7];
-    char akash[] = "hallo world";
+    // char akash[] = "hallo world";
+    int a = 5;
+    printf("%d",a)
 
-    // char b[7][]
-    // for (i = 0; i < 7; i++)
-
-    printf("%c", akash[0]);
+    
 
     return 0;
 }
