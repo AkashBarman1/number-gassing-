@@ -1,13 +1,37 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <time.h>
 int main()
 {
-    // int z[7];
-    char akash[] = "hallo world";
+    srand(time(0));
+    int number = rand() % 100 + 1,user_input, count = 0;
+    while (1)
+    {
+        count++;
+        printf("\nGuess the random number: ");
+        scanf("%d", &user_input);
 
-    // char b[7][]
-    // for (i = 0; i < 7; i++)
-
-    printf("%c", akash[0]);
+        if (user_input > number)
+        {
+            printf("You choose a greater number\n");
+        }
+        else if (user_input < number)
+        {
+            printf("You choose smaller number\n");
+        }
+        else if (user_input == number)
+        {
+            printf("you choose write number\n");
+            break;
+        }
+        else
+        {
+            break;
+        }
+    }
+    printf("\nYou choose write number in %d attempts", count);
 
     return 0;
 }
